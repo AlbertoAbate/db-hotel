@@ -26,9 +26,9 @@ ESERCIZIO DB-HOTEL QUERIES
 
 - Calcola il totale degli ordini accepted
 
-	SELECT * AS 'stato accettato'
- 	FROM `pagamenti`
- 	WHERE `status` = 'accepted';
+	SELECT SUM(`price`) AS `tot_pagamenti_accept`
+	FROM `pagamenti`
+	WHERE `status` = "accepted";
 
 - Qual è il prezzo massimo pagato?
 
