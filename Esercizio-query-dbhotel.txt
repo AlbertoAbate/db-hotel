@@ -1,4 +1,4 @@
-ESERCIZIO DB-HOTEL QUERIES
+                     ESERCIZIO DB-HOTEL QUERIES
 
 - Selezionare tutte le stanze del primo piano
 
@@ -32,7 +32,7 @@ ESERCIZIO DB-HOTEL QUERIES
 
 - Qual è il prezzo massimo pagato?
 
-	SELECT `price` AS 'prezzo più alto'
+	SELECT `price` AS 'prezzo_più_alto'
 	FROM `pagamenti`
 	ORDER BY `price` DESC LIMIT 1;
 
@@ -45,7 +45,7 @@ ESERCIZIO DB-HOTEL QUERIES
 
 - Quanti posti letto ha l’hotel in totale?
 
-	SELECT SUM(beds) AS 'letti disponibili'
+	SELECT SUM(beds) AS 'letti_disponibili'
 	FROM `stanze`;
 
 - Somma i prezzi dei pagamenti raggruppandoli per status
